@@ -1,7 +1,7 @@
 function printOddNumberPattern(num){
 
 if (num<0) {
-console.log("enter a number");
+console.log();
 return;
 }
     for(let i=1;i<=num;i+=2)

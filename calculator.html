@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html</head>
+    <title>calculator</title>
+    <style>
+        .all {
+            width: 250px;
+            margin:0 auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .from-group {
+            margin-bottom:20px;
+        }
+        .from-group input{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .from-group input{
+            width: 100%;
+            padding:10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+   <div class="all">
+    <h2>simple calculator</h2>
+    <div class="from-group">
+        <input type ="number" id="num1" placeholder="Enter the first number">
+    </div>
+    <div class="from-group">
+        <input type="number" id="num2" placeholder="Enter the second number">
+        <div>
+
+        </div class= "from-group">
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="multiply()">*</button>
+        <button onclick="divided()">/</button>
+     </div>
+     <div class="from-group">
+        <input type="text" id="result" readonly>
+        </div>
+        </div>
+        <script>
+            function add(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+                var result=num1+num2;
+                document.getElementById('result').value=result;
+            }
+            function subtract(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+                var result=num1-num2;
+                document.getElementById('result').value=result;
+             }
+             
+             function multiply(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+                var result=num1*num2;
+                document.getElementById('result').value=result
+             }
+             function divided(){
+                var num1=parseFloat(document.getElementById('num1').value);
+                var num2=parseFloat(document.getElementById('num2').value);
+                var result=num1/num2;
+                document.getElementById('result').value=result;
+             }
+                
+             
+
+   </script>
+</body>
+</html>
